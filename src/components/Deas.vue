@@ -13,7 +13,7 @@
 
 <script setup>
 
-import HeroInformation from './HeroInformation.vue';
+import HeroInformation from '@/components/HeroInformation.vue';
 
 </script>
 
