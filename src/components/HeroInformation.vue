@@ -8,11 +8,14 @@
                 class="hero-info__description"
                 :style="{color: colorDescription}">{{ description }}</span>
         </div>
-        <a :href="link" :style="{color: colorLink}" class="hero-info-link">View collection</a>  
+        <ui-button :color="colorLink || 'secondary'" type="link" to="/">
+            View collection
+        </ui-button>
     </div>
 </template>
 
 <script setup>
+import uiButton from '@/components/UI/Button.vue'
 const props = defineProps({
     title: {
         type: String,
@@ -40,7 +43,7 @@ const props = defineProps({
     },
     colorLink: {
         type: String,
-        derault: '#5B5676'
+        required: false
     }
 })
 </script>
@@ -56,16 +59,7 @@ const props = defineProps({
         display: flex
         flex-direction: column
         justify-content: space-between
-        &-link
-            text-align: center
-            padding: 16px 15px
-            color: #2A254B
-            width: 140px
-            border: none
-            background: rgba(249, 249, 249, 0.15)
-            text-decoration: none
-            &:hover
-                background: rgba(249, 249, 249, 0.35)
+        align-items: flex-start
         &-text
             padding-bottom: 180px
             max-width: 450px
