@@ -10,15 +10,15 @@
             </span>
             <div class="subscribe-checks">
                 <div class="subscribe-check">
-                    <img src="/src/assets/svg/login-footer/filled.svg" alt="" class="subscribe-check__icon">
+                    <img src="/src/assets/svg/login-footer/filled.svg"  height="24" width="24" alt="" class="subscribe-check__icon">
                     <span class="subscribe-check__name">Exclusive offers</span>
                 </div>
                 <div class="subscribe-check">
-                    <img src="/src/assets/svg/login-footer/filled.svg" alt="" class="subscribe-check__icon">
+                    <img src="/src/assets/svg/login-footer/filled.svg"  height="24" width="24" alt="" class="subscribe-check__icon">
                     <span class="subscribe-check__name">Free events</span>
                 </div>
                 <div class="subscribe-check">
-                    <img src="/src/assets/svg/login-footer/filled.svg" alt="" class="subscribe-check__icon">
+                    <img src="/src/assets/svg/login-footer/filled.svg"  height="24" width="24" alt="" class="subscribe-check__icon">
                     <span class="subscribe-check__name">Large discounts</span>
                 </div>
             </div>

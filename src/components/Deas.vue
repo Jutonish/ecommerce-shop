@@ -6,7 +6,7 @@
             background="#2A254B"
             colorTitle="#fff"
             colorDescription="#fff"/>
-        <img src="/src/assets/img/ImageBlock/Image Block.jpg" alt="">
+        <img src="/src/assets/img/ImageBlock/Image Block.jpg" alt="" class="ideas-image">
     </div>
 </template>
 
@@ -23,4 +23,7 @@ import HeroInformation from '@/components/HeroInformation.vue';
     column-gap: 16px
     padding: 0 80px
     margin-bottom: 60px
+    &-image
+        height: 100%
+        object-fit: cover
 </style>

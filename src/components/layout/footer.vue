@@ -37,6 +37,31 @@
                     />
                 </div>
             </div>
+            <div class="footer-bottom">
+                <span class="footer-bottom__copy">
+                    Copyright 2022 Avion LTD
+                </span>
+                <div class="footer-bottom__socials">
+                    <a href="#" class="footer-bottom__link">
+                        <img src="/src/assets/svg/footer/linkedin.svg" height="24" width="24" alt="linkedin">
+                    </a>
+                    <a href="#" class="footer-bottom__link">
+                        <img src="/src/assets/svg/footer/facebook.svg" height="24" width="24" alt="facebook">
+                    </a>
+                    <a href="#" class="footer-bottom__link">
+                        <img src="/src/assets/svg/footer/instagram.svg" height="24" width="24" alt="instagram">
+                    </a>
+                    <a href="#" class="footer-bottom__link">
+                        <img src="/src/assets/svg/footer/skype.svg" height="24" width="24" alt="skype">
+                    </a>
+                    <a href="#" class="footer-bottom__link">
+                        <img src="/src/assets/svg/footer/twitter.svg" height="24" width="24" alt="twitter">
+                    </a>
+                    <a href="#" class="footer-bottom__link">
+                        <img src="/src/assets/svg/footer/pinterest.svg" height="24" width="24" alt="pinterest">
+                    </a>
+                </div>
+            </div>
         </div>
     </footer> 
 </template>
@@ -56,6 +81,10 @@ import SubscribeForm from '@/components/SubscribeForm.vue'
         display: grid
         grid-template-columns: 540px 1fr
         column-gap: 110px
+        border-bottom: 1px solid #4E4D93
+        padding-bottom: 40px
+        @media screen and (max-width: 1150px)
+            column-gap: 10px
     &-menu
         display: grid
         grid-template-columns: repeat(3, 1fr)
@@ -73,5 +102,17 @@ import SubscribeForm from '@/components/SubscribeForm.vue'
                 margin-bottom: 0
             &:hover
                 text-decoration: underline
-
+    &-bottom
+        padding-top: 22px
+        display: flex
+        justify-content: space-between
+        &__copy
+            font-size: 14px
+        &__socials
+            display: flex
+            align-items: center
+        &__link
+            margin: 0 12px
+            &:hover
+                opacity: 0.8
 </style>
