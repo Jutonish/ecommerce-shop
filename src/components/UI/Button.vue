@@ -68,4 +68,7 @@ const props = defineProps({
     &--lightgray
         background: #F9F9F9
         color: #2A254B
+    &--white
+        background: #fff
+        color: #2A254B
 </style>

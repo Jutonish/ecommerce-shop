@@ -22,16 +22,17 @@
                     <span class="subscribe-check__name">Large discounts</span>
                 </div>
             </div>
+            <SubscribeForm />
         </div>
     </div>
 </template>
 
-<script>
-
+<script setup>
+import SubscribeForm from '@/components/SubscribeForm.vue'
 </script>
 
 <style lang="sass" scoped>
-    
+
 .subscribe
     background: url('/src/assets/img/login-footer/Image.jpg')
     background-size: cover
@@ -59,6 +60,5 @@
         &:nth-child(2)
             margin: 0 36px
         &__icon
-            margin-right: 9px
-                
+            margin-right: 9px            
 </style>

@@ -64,13 +64,6 @@ const products = ref ([
             justify-content: center
     &-link
         text-align: center
-        // padding: 16px 25px
-        // color: #2A254B
-        // width: 160px
-        // border: none
-        // text-align: center
-        // &:hover
-        //     text-decoration: underline
-        //     background: rgba(249, 249, 249, 0.35)
+
 
 </style>
