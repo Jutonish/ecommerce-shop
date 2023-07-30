@@ -25,6 +25,10 @@ import HeroInformation from '@/components/HeroInformation.vue';
     align-items: center
     justify-content: flex-end
     padding-right: 80px
+    @media screen and (max-width: 767px)
+        height: auto
+        background: transparent
+        padding-right: 0
     &-img
         min-width: 100%
 

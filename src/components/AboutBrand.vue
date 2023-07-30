@@ -52,12 +52,12 @@ const aboutBrand = [
 .about-brand
     padding: 80px 50px 130px 50px
     &-elements
-        display: grid
+        display: grid 
         grid-template-columns: repeat(4, 300px)
         justify-content: space-between
         @media screen and (max-width: 1024px)
             grid-template-columns: repeat(2, 1fr)
-            gap: 40px 20px
+            gap: 20px
     &-element
         background: #F9F9F9
         padding: 49px

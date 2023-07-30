@@ -5,7 +5,8 @@
             {
             'btn--primary': color === 'primary',
             'btn--secondary': color === 'secondary',
-            'btn--lightgray': color === 'lightgray'
+            'btn--lightgray': color === 'lightgray',
+            'btn--fullWidth': mobileFullWidth,
             },
         ]">
         <slot />
@@ -16,7 +17,8 @@
             {
             'btn--primary': color === 'primary',
             'btn--secondary': color === 'secondary',
-            'btn--lightgray': color === 'lightgray'
+            'btn--lightgray': color === 'lightgray',
+            'btn--fullWidth': mobileFullWidth,
             },
         ]">
         <slot />
@@ -40,6 +42,10 @@ const props = defineProps({
     color: {
         type: String,
         default: 'primary'
+    },
+    mobileFullWidth: {
+        type: Boolean,
+        default: false
     }
 })
 
@@ -72,4 +78,7 @@ const props = defineProps({
     &--white
         background: #fff
         color: #2A254B
+    &--fullWidth
+        @media screen and (max-width: 797px)
+            width: 100%
 </style>

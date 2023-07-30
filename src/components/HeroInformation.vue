@@ -8,7 +8,7 @@
                 class="hero-info__description"
                 :style="{color: colorDescription}">{{ description }}</span>
         </div>
-        <ui-button :color="colorLink || 'secondary'" type="link" to="/">
+        <ui-button :mobileFullWidth="true" :color="colorLink || 'secondary'" type="link" to="/">
             View collection
         </ui-button>
     </div>
@@ -60,9 +60,14 @@ const props = defineProps({
         flex-direction: column
         justify-content: space-between
         align-items: flex-start
+        @media screen and (max-width: 767px)
+            padding: 47px 24px 32px 24px
+            min-height: 0
         &-text
             padding-bottom: 180px
             max-width: 450px
+            @media screen and (max-width: 767px)
+            padding-bottom: 32px
             &__title
                 color: #22202E
                 font-size: 32px
