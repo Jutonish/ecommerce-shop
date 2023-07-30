@@ -27,6 +27,10 @@ const props = defineProps({
 
 <style lang="sass" scoped>
 .product
+    @media screen and (max-width: 1024px)
+        display: flex
+        flex-direction: column
+        align-items: center
     &-img
         display: block
         margin-bottom: 24px
@@ -39,8 +43,10 @@ const props = defineProps({
         line-height: 28px
         &:hover
             text-decoration: underline
+            
     &-price
         display: block
         font-size: 18px
         color: #2A254B
+            
 </style>

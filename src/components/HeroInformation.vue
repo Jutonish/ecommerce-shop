@@ -53,7 +53,7 @@ const props = defineProps({
 .hero
     &-info
         background: #fff
-        min-width: 630px
+        max-width: 630px
         padding: 50px 0px 50px 55px
         min-height: 444px
         display: flex

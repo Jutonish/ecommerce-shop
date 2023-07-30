@@ -25,5 +25,6 @@ import HeroInformation from '@/components/HeroInformation.vue';
     margin-bottom: 60px
     &-image
         height: 100%
+        width: 100%
         object-fit: cover
 </style>

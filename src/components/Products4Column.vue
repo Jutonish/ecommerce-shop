@@ -53,15 +53,18 @@ const products = ref ([
 <style lang="sass" scoped>
 .products
     padding: 0 80px
-    display: flex
-    grid-template-columns: repeat (4, 1fr)
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
     column-gap: 20px
     margin-bottom: 65px
+    @media screen and (max-width: 1024px)
+        grid-template-columns: repeat(2, 1fr)
+        row-gap: 20px
     &-container
         margin-bottom: 56px
-        &-l
-            display: flex
-            justify-content: center
+        // &-l
+        //     display: flex
+        //     justify-content: center
     &-link
         text-align: center
 
