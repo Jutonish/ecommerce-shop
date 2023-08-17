@@ -79,6 +79,6 @@ const props = defineProps({
         background: #fff
         color: #2A254B
     &--fullWidth
-        @media screen and (max-width: 797px)
+        @media screen and (max-width: 767px)
             width: 100%
 </style>

@@ -2,15 +2,20 @@
     <div class="hero-info" :style="{backgroundColor: background}">
        <div class="hero-info-text">
             <h2 
-                class="hero-info__title"
+                class="hero-info-text__title"
                 :style="{color: colorTitle}">{{ title }}</h2>
             <span 
-                class="hero-info__description"
+                class="hero-info-text__description"
                 :style="{color: colorDescription}">{{ description }}</span>
         </div>
-        <ui-button :mobileFullWidth="true" :color="colorLink || 'secondary'" type="link" to="/">
+        <ui-button 
+            :mobileFullWidth="true" 
+            :color="colorLink || 'secondary'" 
+            type="link" 
+            to="/">
             View collection
         </ui-button>
+        <img class="hero-info__img" src="/src/assets/img/Hero1.png" alt="">
     </div>
 </template>
 
@@ -61,16 +66,19 @@ const props = defineProps({
         justify-content: space-between
         align-items: flex-start
         @media screen and (max-width: 767px)
-            padding: 47px 24px 32px 24px
+            padding: 47px 0px 32px 0px
             min-height: 0
         &-text
             padding-bottom: 180px
             max-width: 450px
             @media screen and (max-width: 767px)
-            padding-bottom: 32px
+                padding-bottom: 32px
+                padding: 0px 24px 0px 24px
             &__title
                 color: #22202E
                 font-size: 32px
+                @media screen and (max-width: 767px)
+                    font-size: 24px
             &__description
                 color: #5B5676
                 font-size: 18px

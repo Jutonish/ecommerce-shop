@@ -51,6 +51,8 @@ const aboutBrand = [
 
 .about-brand
     padding: 80px 50px 130px 50px
+    @media screen and (max-width: 767px)
+        padding: 48px 24px
     &-elements
         display: grid 
         grid-template-columns: repeat(4, 300px)
@@ -58,9 +60,14 @@ const aboutBrand = [
         @media screen and (max-width: 1024px)
             grid-template-columns: repeat(2, 1fr)
             gap: 20px
+        @media screen and (max-width: 767px)
+            grid-template-columns: 1fr
     &-element
         background: #F9F9F9
         padding: 49px
+        @media screen and (max-width: 767px)
+            grid-template-columns: 1fr
+            padding: 36px 24px
         &__img
             display: block
             margin-bottom: 12px
@@ -76,4 +83,9 @@ const aboutBrand = [
         font-size: 24px
         color: #2A254B
         margin: 0 0 84px 0
+        @media screen and (max-width: 767px)
+             text-align: left
+             font-size: 20px
+             margin-bottom: 36px
+
 </style>
