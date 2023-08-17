@@ -6,6 +6,7 @@
         link="#"
         colorLink="lightgray"
         />
+        <img class="hero-img" src="/src/assets/img/Hero1.png" alt="">
     </div>
 </template>
 
@@ -21,15 +22,13 @@ import HeroInformation from '@/components/HeroInformation.vue';
     background: url(/src/assets/img/Hero.jpg)
     height: 704px
     background-size: cover
-    display: flex
-    align-items: center
-    justify-content: flex-end
     padding-right: 80px
     @media screen and (max-width: 767px)
         height: auto
         background: transparent
         padding-right: 0
+        display: block
     &-img
-        min-width: 100%
+        width: 100%
 
 </style>

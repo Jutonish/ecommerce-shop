@@ -27,11 +27,11 @@ const props = defineProps({
 
 <style lang="sass" scoped>
 .product
-    @media screen and (max-width: 1024px)
-        display: flex
-        flex-direction: column
-        align-items: center
+    display: flex
+    flex-direction: column
+    align-items: flex-start
     &-img
+        width: 100%
         display: block
         margin-bottom: 24px
     &-name
@@ -41,12 +41,15 @@ const props = defineProps({
         text-decoration: none
         margin-bottom: 8px
         line-height: 28px
+        @media screen and (max-width: 767px)
+            font-size: 17px
         &:hover
             text-decoration: underline
-            
     &-price
         display: block
         font-size: 18px
         color: #2A254B
+        @media screen and (max-width: 767px)
+            font-size: 17px
             
 </style>

@@ -33,6 +33,11 @@ const props = defineProps ({
 .subscribe-form
     display: flex
     justify-content: center
+    @media screen and (max-width: 767px)
+        justify-content: flex-start
+    &__input
+        @media screen and (max-width: 767px)
+            padding: 0
 .input-text
-    width: 400px
+    max-width: 400px
 </style>
